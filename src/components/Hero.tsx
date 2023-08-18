@@ -16,7 +16,7 @@ const Hero = () => {
         className=" absolute right-0"
       />
       <div>
-        <h1 className="text-[52px] leading-tight m-0 md:text-[62px] lg:text-[72px] text-center font-bold">Build your very own SaaS <br className="lg:block"/> website with <span className="bg-clip-text text-transparent bg-gradient-to-b from-lime-300 via-white to-purple-400">Dalma</span></h1>
+        <h1 className="text-[52px] leading-tight m-0 md:text-[62px] lg:text-[72px] text-center font-bold">Build your very own SaaS <br className="lg:block"/> website with <span className="bg-clip-text text-transparent bg-gradient-to-b from-lime-400 via-white to-purple-500">Dalma</span></h1>
         <Paragraph content="Lorem ipsum dolor sit amet, consectetur adipiscing elit." center/>
       </div>
     </div>
