@@ -11,8 +11,8 @@ const Navbar = () => {
           />
         </div>
         <div className="flex items-center gap-3">
-            <Button content="Sign up" plain/>
-          <Button content="Purchase Template" secondary/>
+          <Button content="Sign up" plain />
+          <Button content="Purchase Template" secondary />
         </div>
       </nav>
     </div>
