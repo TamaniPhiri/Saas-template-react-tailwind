@@ -10,7 +10,7 @@ const Navbar = () => {
             alt=""
           />
         </div>
-        <div className="flex items-center gap-3">
+        <div className="lg:flex hidden items-center gap-3">
           <Button content="Sign up" plain />
           <Button content="Purchase Template" secondary />
         </div>
