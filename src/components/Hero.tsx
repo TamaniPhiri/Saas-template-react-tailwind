@@ -1,3 +1,5 @@
+import Paragraph from "./Global/Paragraph";
+
 const Hero = () => {
   return (
     <div className="flex items-center min-h-screen relative justify-center w-full px-4 md:px-12">
@@ -15,6 +17,7 @@ const Hero = () => {
       />
       <div>
         <h1 className="text-[52px] leading-tight m-0 md:text-[62px] lg:text-[72px] text-center max-w-2xl font-bold">Build your very own SaaS website with Dalma</h1>
+        <Paragraph content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
       </div>
     </div>
   );
