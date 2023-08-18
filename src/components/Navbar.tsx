@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 
 const navVariants = {
   hidden: {
-    clipPath: "polygon(5.8% at 50% 0)",
+    height:0,
+    clipPath: "circle(5.8% at 50% 0)",
     opacity: 0,
     transition: {
       type: "spring",
@@ -14,8 +15,9 @@ const navVariants = {
     },
   },
   show: {
+    height:250,
+    clipPath: "circle(130% at 50% 0)",
     opacity: 1,
-    clipPath: "polygon(130% at 50% 0)",
     transition: {
       type: "spring",
       stiffness: 80,
@@ -61,7 +63,7 @@ const Navbar = () => {
         initial="hidden"
         animate={open ? "show" : ""}
         exit=""
-        className="bg-black z-30 h-full border border-gray-700 py-6 absolute lg:hidden origin-top right-0 w-full top-[100%]"
+        className="bg-black z-30 border border-gray-700 py-6 absolute lg:hidden origin-top right-0 w-full top-[100%]"
       >
         <div className="w-full flex-col flex-1 h-full justify-between p-4 flex">
           <div className="flex flex-col gap-4 justify-start w-full">
