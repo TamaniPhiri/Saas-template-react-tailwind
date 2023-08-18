@@ -29,7 +29,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="w-full flex relative items-center justify-center px-4 md:px-12 lg:px-20">
-      <nav className="flex z-50 overflow-hidden py-4 w-full justify-between items-center">
+      <nav className="flex z-50 overflow-hidden py-6 md:py-4 w-full justify-between items-center">
         <div>
           <img
             src="https://assets.website-files.com/62bea764d94f5f7e03ba6535/62beab43601a607bdb2b4764_logo.svg"
@@ -63,7 +63,7 @@ const Navbar = () => {
         initial="hidden"
         animate={open ? "show" : ""}
         exit=""
-        className="bg-black z-30 border border-gray-700 py-6 absolute lg:hidden origin-top right-0 w-full top-[100%]"
+        className="bg-black z-30 border-t border-zinc-700 py-6 absolute lg:hidden origin-top right-0 w-full top-[100%]"
       >
         <div className="w-full flex-col flex-1 h-full justify-between p-4 flex">
           <div className="flex flex-col gap-4 justify-start w-full">
