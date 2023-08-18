@@ -1,6 +1,8 @@
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <div className="flex items-center justify-center w-full px-4 md:px-12">
+
+    </div>
   )
 }
 
