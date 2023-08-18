@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const navVariants={
     hidden:{
-        clipPath:'circle(5.8% at 50% 0)',
+        clipPath:'polygon(5.8% at 50% 0)',
         height:0,
         opacity:0,
         transition:{
