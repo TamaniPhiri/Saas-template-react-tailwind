@@ -1,5 +1,6 @@
 import './App.css'
 import Aperture from './components/Aperture'
+import Cta from './components/Cta'
 import Features from './components/Features'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
@@ -16,6 +17,7 @@ function App() {
       <Aperture/>
       <Pricing/>
       <PricingTable/>
+      <Cta/>
     </>
   )
 }
