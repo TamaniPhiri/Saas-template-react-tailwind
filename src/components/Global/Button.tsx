@@ -3,6 +3,7 @@ interface ButtonProps {
   widthFull?: boolean;
   secondary?: boolean;
   primary?: boolean;
+  plain?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -10,12 +11,15 @@ const Button: React.FC<ButtonProps> = ({
   widthFull,
   secondary,
   primary,
+  plain,
 }) => {
   return (
     <div
       className={`${widthFull ? "w-full" : ""} ${
         secondary ? "bg-[#b6ff9c] text-black" : ""
-      } ${primary ? "bg-[#1a1a1a]" : ""} p-3 rounded-full`}
+      } ${primary ? "bg-[#1a1a1a]" : ""} p-3 rounded-full ${
+        plain ? "p-0 rounded-none" : ""
+      }`}
     >
       {content}
     </div>
