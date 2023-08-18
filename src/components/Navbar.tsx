@@ -2,28 +2,26 @@ import { useState } from "react";
 import Button from "./Global/Button";
 import { motion } from "framer-motion";
 
-const navVariants={
-    hidden:{
-        clipPath:'polygon(5.8% at 50% 0)',
-        height:0,
-        opacity:0,
-        transition:{
-            type:'spring',
-            delay:0.2,
-            stiffness:300,
-            damping:140
-        }
+const navVariants = {
+  hidden: {
+    clipPath: "polygon(5.8% at 50% 0)",
+    opacity: 0,
+    transition: {
+      type: "spring",
+      delay: 0.2,
+      stiffness: 300,
+      damping: 140,
     },
-    show:{
-        opacity:1,
-        height:"100%",
-        clipPath:'circle(130% at 50% 0)',
-        transition:{
-            type:'spring',
-            stiffness:80,
-        }
-    }
-}
+  },
+  show: {
+    opacity: 1,
+    clipPath: "polygon(130% at 50% 0)",
+    transition: {
+      type: "spring",
+      stiffness: 80,
+    },
+  },
+};
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -58,9 +56,24 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-        <motion.div variants={navVariants} initial="hidden" animate={open?"show":""} exit="" className="bg-white z-30 absolute origin-top right-0 text-black w-full top-[100%]">
-          hello
-        </motion.div>
+      <motion.div
+        variants={navVariants}
+        initial="hidden"
+        animate={open ? "show" : ""}
+        exit=""
+        className="bg-black z-30 h-full border border-gray-700 py-6 absolute lg:hidden origin-top right-0 w-full top-[100%]"
+      >
+        <div className="w-full flex-col flex-1 h-full justify-between p-4 flex">
+          <div className="flex flex-col gap-4 justify-start w-full">
+            <a href="">Home</a>
+            <a href="">Features</a>
+            <a href="" className="pb-6">
+              Testimonials
+            </a>
+          </div>
+          <Button content="Purchase template" secondary widthFull />
+        </div>
+      </motion.div>
     </div>
   );
 };
