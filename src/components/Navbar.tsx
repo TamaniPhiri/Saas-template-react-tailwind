@@ -15,7 +15,7 @@ const navVariants = {
     },
   },
   show: {
-    height:250,
+    height:280,
     clipPath: "circle(130% at 50% 0)",
     opacity: 1,
     transition: {

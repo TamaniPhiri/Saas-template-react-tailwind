@@ -19,7 +19,7 @@ const Button: React.FC<ButtonProps> = ({
         secondary ? "bg-[#b6ff9c] text-black" : ""
       } ${primary ? "bg-[#1a1a1a]" : ""} rounded-full ${
         plain ? "p-0 rounded-none" : "py-3 px-5"
-      }`}
+      } text-center`}
     >
       {content}
     </div>
