@@ -1,6 +1,4 @@
 interface ButtonProps {
-  bg?: string;
-  text?: string;
   content?: string;
   widthFull?: boolean;
   secondary?: boolean;
@@ -8,8 +6,6 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({
-  bg,
-  text,
   content,
   widthFull,
   secondary,
