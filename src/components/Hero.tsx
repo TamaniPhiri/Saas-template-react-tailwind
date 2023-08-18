@@ -13,6 +13,9 @@ const Hero = () => {
         loading="lazy"
         className=" absolute right-0"
       />
+      <div>
+        <h1 className="text-[52px] leading-tight m-0 md:text-[62px] lg:text-[72px] text-center max-w-2xl font-bold">Build your very own SaaS website with Dalma</h1>
+      </div>
     </div>
   );
 };
