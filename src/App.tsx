@@ -4,6 +4,7 @@ import Features from './components/Features'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Pricing from './components/Pricing'
+import PricingTable from './components/PricingTable'
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
       <Features/>
       <Aperture/>
       <Pricing/>
-      
+      <PricingTable/>
     </>
   )
 }
