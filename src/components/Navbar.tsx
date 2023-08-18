@@ -1,5 +1,29 @@
 import { useState } from "react";
 import Button from "./Global/Button";
+import { motion } from "framer-motion";
+
+const navVariants={
+    hidden:{
+        clipPath:'circle(5.8% at 50% 0)',
+        height:0,
+        opacity:0,
+        transition:{
+            type:'spring',
+            delay:0.2,
+            stiffness:300,
+            damping:140
+        }
+    },
+    show:{
+        opacity:1,
+        height:"100%",
+        clipPath:'circle(130% at 50% 0)',
+        transition:{
+            type:'spring',
+            stiffness:80,
+        }
+    }
+}
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -34,11 +58,9 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      {open ? (
-        <div className="bg-white z-30 absolute right-0 text-black w-full top-[100%]">
+        <motion.div variants={navVariants} initial="hidden" animate={open?"show":""} exit="" className="bg-white z-30 absolute origin-top right-0 text-black w-full top-[100%]">
           hello
-        </div>
-      ) : null}
+        </motion.div>
     </div>
   );
 };
