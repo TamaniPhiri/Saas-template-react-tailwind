@@ -16,20 +16,14 @@ body {
 }
 
 .slide {
-  animation: scroll 60s linear infinite;
+  animation: scroll 30s linear infinite;
 }
 
 @keyframes scroll {
   0%,100% {
-    transform: translateX(0);
-  }
-  25%{
-    transform: translateX(500px);
+    transform: translateX(100px);
   }
   50%{
     transform: translateX(-500px);
-  }
-  75%{
-    transform: translateX(500px);
   }
 }
