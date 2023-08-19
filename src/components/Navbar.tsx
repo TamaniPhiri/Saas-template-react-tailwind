@@ -43,22 +43,22 @@ const Navbar = () => {
           </div>
           <div
             onClick={() => setOpen(!open)}
-            className="flex relative lg:hidden gap-3 flex-col items-center justify-center"
+            className={`flex relative lg:hidden gap-3 ${open?"rotate-90":"rotate-0"} flex-col transition-all duration-500 delay-200 items-center justify-center`}
           >
             <div
               className={`w-6 h-[2px] rounded-full ${
-                open ? "-rotate-45 translate-y-2" : ""
-              } transition-all transform duration-500 bg-white`}
+                open ? "-rotate-45 translate-y-[0.45rem]" : ""
+              } transition-all transform duration-500 delay-300 bg-white`}
             ></div>
             <div
               className={`w-6 h-[2px] ${
-                open ? "translate-x-10" : "translate-x-0"
-              } rounded-full transition-all duration-500 bg-white absolute`}
+                open ? "translate-x-4 rotate-180 opacity-0" : "translate-x-0 rotate-0 opacity-100"
+              } rounded-full transition-all duration-500 delay-300 bg-white absolute`}
             ></div>
             <div
               className={`w-6 h-[2px] rounded-full ${
-                open ? "rotate-45 -translate-y-2" : ""
-              } transition-all transform duration-500 bg-white`}
+                open ? "rotate-45 -translate-y-[0.45rem]" : ""
+              } transition-all transform duration-500 delay-300 bg-white`}
             ></div>
           </div>
         </div>
