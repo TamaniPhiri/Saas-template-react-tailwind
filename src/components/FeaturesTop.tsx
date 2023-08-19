@@ -31,12 +31,14 @@ const FeaturesTop = () => {
             <h1>lasklask</h1>
             <p>aslkassl</p>
           </div>
-          <img
-            src="https://assets.website-files.com/62bea764d94f5f7e03ba6535/62bf0bedf346dcf2b39f249d_Clipped%20graphic%202.png"
-            className=" object-cover object-center h-full w-full"
-            loading="lazy"
-            alt="Feature"
-          />
+          <div className="">
+            <img
+              src="https://assets.website-files.com/62bea764d94f5f7e03ba6535/62bf0bedf346dcf2b39f249d_Clipped%20graphic%202.png"
+              className=" object-cover object-center h-full w-full"
+              loading="lazy"
+              alt="Feature"
+            />
+          </div>
         </div>
       </div>
     </div>
