@@ -36,7 +36,7 @@ const Navbar = () => {
             alt=""
           />
         </div>
-        <div className="flex items-center gap-5 lg:gap-3">
+        <div className="flex items-center gap-5">
           <Button content="Sign up" plain />
           <div className="lg:block hidden">
             <Button content="Purchase Template" secondary />
