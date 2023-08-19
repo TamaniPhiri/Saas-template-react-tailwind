@@ -8,7 +8,7 @@ const Header: React.FC<HeaderProps> = ({ widthFull, center, content }) => {
     <h1
       className={`${widthFull ? "w-full" : ""} ${
         center ? "text-center" : "text-left"
-      } text-[32px] md:text-[36px] lg:text-[40px]`}
+      } text-[40px] md:text-[48px] lg:text-[56px] font-bold`}
     >
       {content}
     </h1>
