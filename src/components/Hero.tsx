@@ -17,9 +17,19 @@ const Hero = () => {
         className=" absolute right-0"
       />
       <div>
-        <div>hello</div>
+        <div className="bg-[#1a1a1a] md:flex-row flex flex-col items-center justify-center">
+          <div>
+            <img
+              src="https://assets.website-files.com/62bea764d94f5f7e03ba6535/62beab4396821230564585f1_Small%20line.svg"
+              alt="greenLine"
+              loading="lazy"
+            />
+          </div>
+          <div></div>
+        </div>
         <h1 className="text-[54px] leading-[1] mb-4 md:text-[64px] w-full lg:text-[76px] text-center font-bold">
-          Build your very own SaaS<br className="lg:block hidden" /> website with{" "}
+          Build your very own SaaS
+          <br className="lg:block hidden" /> website with{" "}
           <span className="bg-clip-text text-transparent bg-gradient-to-b from-lime-400 via-white to-purple-500">
             Dalma
           </span>
