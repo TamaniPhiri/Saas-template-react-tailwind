@@ -17,8 +17,9 @@ const Hero = () => {
         className=" absolute right-0"
       />
       <div>
-        <h1 className="text-[52px] leading-tight mb-4 md:text-[62px] lg:text-[72px] text-center font-bold">
-          Build your very own SaaS <br className="lg:block" /> website with{" "}
+        <div>hello</div>
+        <h1 className="text-[56px] leading-[1] mb-4 md:text-[64px] w-full lg:text-[76px] text-center font-bold">
+          Build your very own SaaS<br className="lg:block hidden" /> website with{" "}
           <span className="bg-clip-text text-transparent bg-gradient-to-b from-lime-400 via-white to-purple-500">
             Dalma
           </span>

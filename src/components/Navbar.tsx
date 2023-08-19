@@ -28,7 +28,7 @@ const navVariants = {
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="w-full flex relative items-center justify-center px-4 md:px-12 lg:px-20">
+    <div className="w-full flex relative items-center justify-center px-4 md:px-10">
       <nav className="flex z-50 overflow-hidden py-6 md:py-4 w-full justify-between items-center">
         <div>
           <img
