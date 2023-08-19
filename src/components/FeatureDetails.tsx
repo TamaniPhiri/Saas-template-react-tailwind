@@ -7,8 +7,8 @@ const FeatureDetails = () => {
       <div className="w-full grid md:grid-cols-2 grid-cols-1">
         <div className="flex flex-col gap-3">
           <span>Software feature</span>
-          <Header content="Build quickly and easily with Dalma"/>
-          <Paragraph content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at eleifend senectus."/>
+          <Header content="Build quickly and easily with Dalma" />
+          <Paragraph content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at eleifend senectus." />
         </div>
         <div>
           <img
@@ -28,8 +28,8 @@ const FeatureDetails = () => {
         </div>
         <div className="flex flex-col gap-3">
           <span>Software feature</span>
-          <Header content="Create stunning websites with Dalma"/>
-          <Paragraph content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at eleifend senectus."/>
+          <Header content="Create stunning websites with Dalma" />
+          <Paragraph content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at eleifend senectus." />
         </div>
       </div>
     </div>
