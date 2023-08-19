@@ -1,5 +1,6 @@
 import "./App.css";
 import Aperture from "./components/Aperture";
+import Brands from "./components/Brands";
 import Cta from "./components/Cta";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
@@ -13,6 +14,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
+      <Brands/>
       <Features />
       <Aperture />
       <Pricing />
