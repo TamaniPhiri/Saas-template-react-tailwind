@@ -50,7 +50,11 @@ const Navbar = () => {
                 open ? "-rotate-45 translate-y-2" : ""
               } transition-all transform duration-500 bg-white`}
             ></div>
-            <div className={`w-6 h-[2px] ${open?"translate-x-10":"translate-x-0"} rounded-full transition-all duration-500 bg-white absolute`}></div>
+            <div
+              className={`w-6 h-[2px] ${
+                open ? "translate-x-10" : "translate-x-0"
+              } rounded-full transition-all duration-500 bg-white absolute`}
+            ></div>
             <div
               className={`w-6 h-[2px] rounded-full ${
                 open ? "rotate-45 -translate-y-2" : ""
@@ -68,8 +72,12 @@ const Navbar = () => {
       >
         <div className="w-full flex-col flex-1 h-full justify-between p-4 flex">
           <div className="flex flex-col gap-4 justify-start w-full">
-            <a href="" className=" hover:text-[#b6ff9c] transition-all">Home</a>
-            <a href="" className=" hover:text-[#b6ff9c] transition-all">Features</a>
+            <a href="" className=" hover:text-[#b6ff9c] transition-all">
+              Home
+            </a>
+            <a href="" className=" hover:text-[#b6ff9c] transition-all">
+              Features
+            </a>
             <a href="" className="pb-6 hover:text-[#b6ff9c] transition-all">
               Testimonials
             </a>
