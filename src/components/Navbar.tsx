@@ -67,9 +67,9 @@ const Navbar = () => {
       >
         <div className="w-full flex-col flex-1 h-full justify-between p-4 flex">
           <div className="flex flex-col gap-4 justify-start w-full">
-            <a href="" className=" hover:text-[#b6ff9c] transition-all bg-red-300">Home</a>
-            <a href="" className=" hover:text-[#b6ff9c] transition-all bg-red-300">Features</a>
-            <a href="" className="pb-6 hover:text-[#b6ff9c] transition-all bg-red-300">
+            <a href="" className=" hover:text-[#b6ff9c] transition-all">Home</a>
+            <a href="" className=" hover:text-[#b6ff9c] transition-all">Features</a>
+            <a href="" className="pb-6 hover:text-[#b6ff9c] transition-all">
               Testimonials
             </a>
           </div>
