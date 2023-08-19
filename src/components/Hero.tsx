@@ -42,9 +42,9 @@ const Hero = () => {
           center
         />
       </div>
-      <div className="flex justify-center z-10 my-8 items-center gap-3">
-        <Button content="Get started" secondary />
-        <Button content="Sign up" primary />
+      <div className="flex justify-center w-full flex-col md:flex-row z-10 my-8 items-center gap-3">
+        <Button content="Get started" secondary widthFull={false}/>
+        <Button content="Sign up" primary widthFull={false}/>
       </div>
     </div>
   );
