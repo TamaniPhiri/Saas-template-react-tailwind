@@ -1,5 +1,5 @@
 import "./App.css";
-import Aperture from "./components/Aperture";
+import FeatureDetails from "./components/FeatureDetails";
 import Brands from "./components/Brands";
 import Cta from "./components/Cta";
 import FeaturesTop from "./components/FeaturesTop";
@@ -16,7 +16,7 @@ function App() {
       <Hero />
       <Brands/>
       <FeaturesTop />
-      <Aperture />
+      <FeatureDetails />
       <Pricing />
       <PricingTable />
       <Cta />

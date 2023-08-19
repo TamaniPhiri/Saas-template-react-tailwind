@@ -4,7 +4,7 @@ import Paragraph from "./Global/Paragraph";
 
 const FeaturesTop = () => {
   return (
-    <div className="flex flex-col min-h-screen py-20 w-full overflow-hidden items-center justify-center px4 md:px-12">
+    <div className="flex flex-col min-h-screen py-24 w-full overflow-hidden items-center justify-center px4 md:px-12">
       <h1 className="text-[40px] md:text-[48px] lg:text-[56px] font-bold">
         Cool features
       </h1>
