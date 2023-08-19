@@ -5,7 +5,7 @@ const FeaturesTop = () => {
   return (
     <div className="flex flex-col w-full items-center justify-center px4 md:px-12">
       <Header content="Cool features" center />
-      <Paragraph content="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+      <Paragraph content="Lorem ipsum dolor sit amet, consectetur adipiscing elit." center/>
     </div>
   );
 };
