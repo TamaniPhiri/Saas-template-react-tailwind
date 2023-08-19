@@ -18,7 +18,7 @@ const Button: React.FC<ButtonProps> = ({
       className={`${widthFull ? "w-full" : ""} ${
         secondary ? "bg-[#b6ff9c] text-black" : ""
       } ${primary ? "bg-[#1a1a1a]" : ""} rounded-full ${
-        plain ? "p-0 rounded-none" : "py-3 px-5"
+        plain ? "p-0 rounded-none" : "py-3 px-6"
       } text-center hover:scale-95 active:scale-105 font-semibold hover:opacity-70 transform transition-all duration-500 delay-200 cursor-pointer`}
     >
       {content}
