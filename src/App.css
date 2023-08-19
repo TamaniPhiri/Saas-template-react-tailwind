@@ -2,15 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'DM Sans', sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
 }
 
-body{
-    background-color: black;
-    color: white;
-    overflow-x: hidden;
+body {
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+.slide {
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  0%,100% {
+    transform: translateX(0);
+  }
+  25%{
+    transform: translateX(500px);
+  }
+  50%{
+    transform: translateX(-500px);
+  }
+  75%{
+    transform: translateX(500px);
+  }
 }
