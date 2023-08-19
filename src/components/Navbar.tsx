@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const navVariants = {
   hidden: {
-    height:0,
+    height: 0,
     clipPath: "circle(5.8% at 50% 0)",
     opacity: 0,
     transition: {
@@ -15,11 +15,11 @@ const navVariants = {
     },
   },
   show: {
-    height:280,
+    height: 280,
     clipPath: "circle(130% at 50% 0)",
     opacity: 1,
     transition: {
-      type: "spring",
+      type: "",
       stiffness: 80,
     },
   },
@@ -67,9 +67,9 @@ const Navbar = () => {
       >
         <div className="w-full flex-col flex-1 h-full justify-between p-4 flex">
           <div className="flex flex-col gap-4 justify-start w-full">
-            <a href="">Home</a>
-            <a href="">Features</a>
-            <a href="" className="pb-6">
+            <a href="" className=" hover:text-[#b6ff9c] transition-all">Home</a>
+            <a href="" className=" hover:text-[#b6ff9c] transition-all">Features</a>
+            <a href="" className="pb-6 hover:text-[#b6ff9c] transition-all">
               Testimonials
             </a>
           </div>
