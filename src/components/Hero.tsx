@@ -16,7 +16,7 @@ const Hero = () => {
         loading="lazy"
         className=" absolute right-0 z-0"
       />
-      <>
+      <div className="z-20">
         <div className="w-full flex my-5 items-center justify-center">
           <div className="bg-[#1a1a1a] gap-2 rounded-full py-2 md:px-6 px-4 w-fit flex md:flex-row flex-col items-center">
             <img
@@ -41,7 +41,7 @@ const Hero = () => {
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           center
         />
-      </>
+      </div>
       <div className="flex justify-center z-10 my-8 items-center gap-3">
         <Button content="Get started" secondary />
         <Button content="Sign up" primary />
