@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Testimonial from "./components/Testimonial";
-import PricingTable from "./components/PricingTable";
+import Comparison from "./components/Comparison";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
       <FeaturesTop />
       <FeatureDetails />
       <Testimonial />
-      <PricingTable />
+      <Comparison />
       <Cta />
       <Footer />
     </>
