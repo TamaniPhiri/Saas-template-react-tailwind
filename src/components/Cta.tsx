@@ -9,7 +9,11 @@ const Cta = () => {
         alt="GreenLine"
         loading="lazy"
       />
-      <Header content="Launch your fastest static sites to date with Dalma template!" center />
+      <Header
+        content="Launch your fastest static sites to date with Dalma template!"
+        center
+        minWidth
+      />
       <Paragraph
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         center

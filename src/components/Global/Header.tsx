@@ -15,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({
       className={`${widthFull ? "w-full" : ""} ${
         center ? "text-center" : ""
       } text-[32px] md:text-[36px] lg:text-[40px] leading-[2.4rem] mb-2 font-bold text-left  ${
-        minWidth ? "max-w-sm" : ""
+        minWidth ? "lg:max-w-2xl md:max-w-xl" : ""
       }`}
     >
       {content}
