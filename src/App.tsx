@@ -8,6 +8,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Testimonial from "./components/Testimonial";
 import Comparison from "./components/Comparison";
+import CoolFeatures from "./components/CoolFeatures";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Testimonial />
       <Comparison />
       <SoftwareFeature />
+      <CoolFeatures/>
       <Footer />
     </>
   );
