@@ -1,3 +1,4 @@
+import Button from "./Global/Button";
 import Header from "./Global/Header";
 import Paragraph from "./Global/Paragraph";
 
@@ -19,6 +20,10 @@ const Cta = () => {
         center
         minWidth
       />
+      <div>
+        <Button content="Get started"/>
+        <Button content="Other templates"/>
+      </div>
     </div>
   );
 };
