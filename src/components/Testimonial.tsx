@@ -41,7 +41,7 @@ const Testimonial = () => {
               <div>
                 <Stars />
               </div>
-              <h1>{item.message}</h1>
+              <h1 className="my-4 font-bold text-2xl">{item.message}</h1>
               <div>
                 <span>Rated {item.rate}/5</span> -{" "}
                 <span>{item.reviews} Reviews</span>
