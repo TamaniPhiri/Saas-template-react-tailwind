@@ -6,8 +6,8 @@ const FeatureDetails = () => {
   return (
     <div className="flex flex-col py-24 min-h-screen md:h-auto w-full items-center justify-center px-4 md:px-12">
       {/* Card 1 Top */}
-      <div className="w-full lg:min-h-screen justify-center items-center grid md:gap-8 md:grid-cols-2 grid-cols-1 lg:px-10">
-        <div className="flex flex-col max-w-sm gap-3">
+      <div className="w-full lg:min-h-screen justify-center items-center grid gap-8 lg:grid-cols-2 grid-cols-1 lg:px-10">
+        <div className="flex flex-col md:max-w-md lg:max-w-sm gap-3">
           <span className="text-[#b6ff9c] font-bold text-lg">
             Software feature
           </span>
@@ -40,27 +40,27 @@ const FeatureDetails = () => {
             />
           </a>
         </div>
-        <div className="w-full flex justify-center md:mt-0 mt-10">
+        <div className="w-full flex lg:justify-center md:mt-0 mt-10">
           <img
             src="https://assets.website-files.com/62bea764d94f5f7e03ba6535/62c30bd4926d58602b0b520b_Purchase%20chart%201.png"
             alt="features"
             loading="lazy"
-            className=" object-cover rounded-xl bg-[#1a1a1a] p-3 md:p-6 max-w-md object-center"
+            className=" object-cover rounded-xl bg-[#1a1a1a] p-3 lg:p-6 max-w-sm md:max-w-lg lg:max-w-md object-center"
           />
         </div>
       </div>
 
       {/* Card 2 Bottom */}
-      <div className="w-full lg:min-h-screen lg:pt-0 pt-24 md:gap-8 justify-center items-center grid md:grid-cols-2 grid-cols-1">
-        <div className="w-full hidden md:flex justify-center md:mt-0 mt-10">
+      <div className="w-full lg:min-h-screen lg:pt-0 pt-24 gap-8 justify-center items-center grid lg:grid-cols-2 grid-cols-1">
+        <div className="w-full hidden lg:flex lg:justify-center md:mt-0 mt-10">
           <img
             src="https://assets.website-files.com/62bea764d94f5f7e03ba6535/62c30bd4926d58c7350b520a_Purchase%20chart%202.png"
             alt="features"
             loading="lazy"
-            className=" object-cover rounded-xl bg-[#1a1a1a] p-3 md:p-6 object-center md:h-[22rem]"
+            className=" object-cover rounded-xl bg-[#1a1a1a] p-3 lg:p-6 object-center max-w-sm md:max-w-lg lg:max-w-md"
           />
         </div>
-        <div className="flex flex-col max-w-sm gap-3">
+        <div className="flex flex-col md:max-w-md lg:max-w-sm gap-3">
           <span className="text-[#b6ff9c] font-bold text-lg">
             Software feature
           </span>
@@ -86,12 +86,12 @@ const FeatureDetails = () => {
             <Button primary content="Other templates" />
           </a>
         </div>
-        <div className="w-full md:hidden flex justify-center md:mt-0 mt-10">
+        <div className="w-full lg:hidden flex lg:justify-center md:mt-0 mt-10">
           <img
             src="https://assets.website-files.com/62bea764d94f5f7e03ba6535/62c30bd4926d58c7350b520a_Purchase%20chart%202.png"
             alt="features"
             loading="lazy"
-            className=" object-cover rounded-xl bg-[#1a1a1a] p-3 md:p-6 object-center md:h-[22rem]"
+            className=" object-cover rounded-xl bg-[#1a1a1a] p-3 lg:p-6 object-center max-w-sm md:max-w-lg lg:max-w-md"
           />
         </div>
       </div>
