@@ -1,3 +1,5 @@
+import { reviews } from "../constants/Testimonials";
+
 const Testimonial = () => {
   return (
     <div className="grid min-h-screen items-center md:grid-cols-2 px-4 md:px-12 grid-cols-1">
@@ -31,7 +33,20 @@ const Testimonial = () => {
           </div>
         </div>
       </div>
-      <div>asls</div>
+      <div>
+        <div className="flex flex-col">
+          {reviews.map((item, index) => (
+            <div key={index}>
+              <div></div>
+              <h1>{item.message}</h1>
+              <div>
+                <span>Rated {item.rate}/5</span> -{" "}
+                <span>{item.reviews} Reviews</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
