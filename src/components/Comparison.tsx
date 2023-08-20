@@ -20,7 +20,7 @@ const Comparison = () => {
         {comparisons.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center w-full"
+            className="flex flex-col items-center gap-3 justify-center w-full"
           >
             <div className="bg-[#b6ff9c] rounded-full p-3">
               <img
@@ -30,8 +30,8 @@ const Comparison = () => {
                 className="object-cover object-center h-10"
               />
             </div>
-            <h1>{item.title}</h1>
-            <p className="w-full text-center">{item.description}</p>
+            <h1 className="font-bold text-2xl">{item.title}</h1>
+            <p className="w-full text-center text-zinc-300">{item.description}</p>
           </div>
         ))}
       </div>
