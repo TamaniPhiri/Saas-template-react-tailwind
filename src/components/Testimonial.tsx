@@ -37,8 +37,8 @@ const Testimonial = () => {
       </div>
 
       {/* Right Card- Reviews */}
-      <div className="flex w-full flex-col items-center justify-center">
-        <div className="flex flex-col max-w-sm gap-8">
+      <div className="flex w-full flex-col lg:justify-center items-center">
+        <div className="flex flex-col w-full md:max-w-md lg:max-w-sm gap-8">
           {reviews.map((item, index) => (
             <div key={index}>
               <div>
