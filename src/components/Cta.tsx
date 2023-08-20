@@ -20,7 +20,7 @@ const Cta = () => {
         center
         minWidth
       />
-      <div className="flex gap-3 items-center">
+      <div className="flex gap-3 items-center my-5">
         <Button content="Get started" secondary/>
         <Button content="Other templates" primary/>
       </div>
