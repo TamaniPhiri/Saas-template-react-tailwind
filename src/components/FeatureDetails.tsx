@@ -10,9 +10,18 @@ const FeatureDetails = () => {
           <Header content="Build quickly and easily with Dalma" />
           <Paragraph content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at eleifend senectus." />
           <div className="flex gap-3 items-center my-4">
-            <img src="https://assets.website-files.com/62bea764d94f5f7e03ba6535/62c19cfee7fe5c224e5d1631_luminous-Color%20icon.svg" alt="Luminous" />
-            <img src="https://assets.website-files.com/62bea764d94f5f7e03ba6535/62c19cfd8758bb7f808b95b1_Network-Color%20icon.svg" alt="Network" />
-            <img src="https://assets.website-files.com/62bea764d94f5f7e03ba6535/62c19cfe54de256a6e45022b_Sitemark-Color%20icon.svg" alt="SiteMark" />
+            <img
+              src="https://assets.website-files.com/62bea764d94f5f7e03ba6535/62c19cfee7fe5c224e5d1631_luminous-Color%20icon.svg"
+              alt="Luminous"
+            />
+            <img
+              src="https://assets.website-files.com/62bea764d94f5f7e03ba6535/62c19cfd8758bb7f808b95b1_Network-Color%20icon.svg"
+              alt="Network"
+            />
+            <img
+              src="https://assets.website-files.com/62bea764d94f5f7e03ba6535/62c19cfe54de256a6e45022b_Sitemark-Color%20icon.svg"
+              alt="SiteMark"
+            />
           </div>
         </div>
         <div className="w-full flex justify-center">
@@ -22,6 +31,10 @@ const FeatureDetails = () => {
             loading="lazy"
             className=" object-cover rounded-xl bg-[#1a1a1a] p-3 md:p-6 object-center md:h-[22rem]"
           />
+        </div>
+        <div>
+          <span>Integrate your favorite software.</span>
+          <img src="https://assets.website-files.com/62bea764d94f5f7e03ba6535/62c19d96b115e07d5798a0c7_Arrow%20right.svg" alt="rarr" loading="lazy"/>
         </div>
       </div>
       <div className="w-full grid md:grid-cols-2 grid-cols-1">
