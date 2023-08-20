@@ -33,11 +33,11 @@ const Testimonial = () => {
           </div>
         </div>
       </div>
-      <div>
-        <div className="flex flex-col">
+      <div className="flex w-full items-center justify-center">
+        <div className="flex flex-col max-w-sm">
           {reviews.map((item, index) => (
             <div key={index}>
-              <div></div>
+              <div>stars</div>
               <h1>{item.message}</h1>
               <div>
                 <span>Rated {item.rate}/5</span> -{" "}

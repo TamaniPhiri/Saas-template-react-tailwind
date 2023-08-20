@@ -44,7 +44,7 @@ const FeatureDetails = () => {
             src="https://assets.website-files.com/62bea764d94f5f7e03ba6535/62c30bd4926d58602b0b520b_Purchase%20chart%201.png"
             alt="features"
             loading="lazy"
-            className=" object-cover rounded-xl bg-[#1a1a1a] p-3 md:p-6 object-center md:h-[22rem]"
+            className=" object-cover rounded-xl bg-[#1a1a1a] p-3 md:p-6 max-w-md object-center"
           />
         </div>
       </div>
