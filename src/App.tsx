@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import Testimonial from "./components/Testimonial";
 import Comparison from "./components/Comparison";
 import CoolFeatures from "./components/CoolFeatures";
+import Cta from "./components/Cta";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Comparison />
       <SoftwareFeature />
       <CoolFeatures/>
+      <Cta/>
       <Footer />
     </>
   );
