@@ -53,7 +53,7 @@ const Testimonial = () => {
             </div>
           ))}
           <div className="flex text-left my-3 gap-3">
-            <span>
+            <span className="font-semibold">
               To learn more about us click{" "}
               <a href="#" className="text-[#b6ff9c]">
                 here
