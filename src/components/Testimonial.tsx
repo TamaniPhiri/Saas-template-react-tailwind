@@ -15,7 +15,7 @@ const Testimonial = () => {
                 />
               </div>
               <div>
-                <h1>Joe Schmoe</h1>
+                <h1 className=" font-semibold">Joe Schmoe</h1>
                 <p className="text-gray-600">Director @Sitemark</p>
               </div>
             </div>
