@@ -1,7 +1,7 @@
-const Cta = () => {
+const SoftwareFeature = () => {
   return (
-    <div>Cta</div>
+    <div>SoftwareFeature</div>
   )
 }
 
-export default Cta
+export default SoftwareFeature
