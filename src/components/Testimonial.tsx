@@ -3,7 +3,7 @@ import { reviews } from "../constants/Testimonials";
 
 const Testimonial = () => {
   return (
-    <div className="grid min-h-screen bg-red-200 items-center lg:grid-cols-2 px-4 md:px-12 grid-cols-1">
+    <div className="grid min-h-screen gap-12 items-center lg:grid-cols-2 px-4 md:px-12 grid-cols-1">
       {/* Left Green Card */}
       <div className="flex w-full lg:justify-center items-center">
         <div className="bg-[#b6ff9c] px-8 pt-8 rounded-xl w-fit text-black flex flex-col">
@@ -37,7 +37,7 @@ const Testimonial = () => {
       </div>
 
       {/* Right Card- Reviews */}
-      <div className="flex w-full flex-col lg:justify-center items-center">
+      <div className="flex w-full flex-col lg:justify-center lg:items-center">
         <div className="flex flex-col w-full md:max-w-md lg:max-w-sm gap-8">
           {reviews.map((item, index) => (
             <div key={index}>
