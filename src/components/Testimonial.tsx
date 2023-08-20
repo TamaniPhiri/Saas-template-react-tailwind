@@ -3,7 +3,7 @@ const Testimonial = () => {
     <div className="grid min-h-screen items-center md:grid-cols-2 px-4 md:px-12 grid-cols-1">
       <div className="flex w-full justify-center items-center">
         <div className="bg-[#b6ff9c] px-8 pt-8 rounded-xl w-fit text-black flex flex-col">
-          <div className="bg-red-600 w-fit max-w-md">
+          <div className=" w-fit max-w-md">
             <h1 className="text-[24px] md:text-[28px] lg:text-[32px] font-bold">
               “Working with Dalma has been a breeze from the very start.”
             </h1>
