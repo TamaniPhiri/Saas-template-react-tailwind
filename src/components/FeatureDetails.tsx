@@ -81,7 +81,7 @@ const FeatureDetails = () => {
                 className="object-cover w-12 object-center"
               />
             </div>
-            <div className="flex flex-col w-full">
+            <div className="flex z-30 flex-col w-full">
               <h1 className="text-2xl font-bold">Gorgeous design</h1>
               <p className="text-[16px] pt-2 text-zinc-400 w-full">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
@@ -97,7 +97,7 @@ const FeatureDetails = () => {
             src="https://assets.website-files.com/62bea764d94f5f7e03ba6535/62c30bd4926d58c7350b520a_Purchase%20chart%202.png"
             alt="features"
             loading="lazy"
-            className=" object-cover rounded-xl bg-[#1a1a1a] bg-opacity-90 p-6 object-center w-full md:max-w-lg lg:max-w-md"
+            className=" object-cover rounded-xl bg-[#1a1a1a] bg-opacity-40 p-6 object-center w-full md:max-w-lg lg:max-w-md"
           />
         </div>
       </div>
