@@ -16,7 +16,7 @@ const Comparison = () => {
         center
         minWidth
       />
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 mt-10 gap-10 grid-cols-1 items-center justify-center w-full">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 mt-10 gap-10 md:gap-4 grid-cols-1 items-center justify-center w-full">
         {comparisons.map((item, index) => (
           <div
             key={index}
