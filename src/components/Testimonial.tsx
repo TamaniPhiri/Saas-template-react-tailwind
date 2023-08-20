@@ -1,3 +1,4 @@
+import Stars from "../constants/Stars";
 import { reviews } from "../constants/Testimonials";
 
 const Testimonial = () => {
@@ -37,7 +38,9 @@ const Testimonial = () => {
         <div className="flex flex-col max-w-sm">
           {reviews.map((item, index) => (
             <div key={index}>
-              <div>stars</div>
+              <div>
+                <Stars />
+              </div>
               <h1>{item.message}</h1>
               <div>
                 <span>Rated {item.rate}/5</span> -{" "}
