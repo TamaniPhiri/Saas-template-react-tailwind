@@ -88,7 +88,10 @@ const FeatureDetails = () => {
               </p>
             </div>
           </div>
-          <a className="pl-4 md:pl-12 lg:pl-0" href="https://webflow.com/templates/designers/veljko-ilic">
+          <a
+            className="pl-4 md:pl-12 lg:pl-0"
+            href="https://webflow.com/templates/designers/veljko-ilic"
+          >
             <Button primary content="Other templates" />
           </a>
         </div>
