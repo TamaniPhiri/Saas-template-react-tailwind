@@ -50,7 +50,7 @@ const Testimonial = () => {
           ))}
         </div>
         <div>
-          <span>To learn more about us click <a href="#">here</a></span>
+          <span>To learn more about us click <a href="#" className="text-[#b6ff9c]">here</a></span>
         </div>
       </div>
     </div>
