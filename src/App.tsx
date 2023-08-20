@@ -1,7 +1,7 @@
 import "./App.css";
 import FeatureDetails from "./components/FeatureDetails";
 import Brands from "./components/Brands";
-import Cta from "./components/Cta";
+import SoftwareFeature from "./components/Cta";
 import FeaturesTop from "./components/FeaturesTop";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -19,7 +19,7 @@ function App() {
       <FeatureDetails />
       <Testimonial />
       <Comparison />
-      <Cta />
+      <SoftwareFeature />
       <Footer />
     </>
   );
