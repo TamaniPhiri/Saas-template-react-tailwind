@@ -11,6 +11,12 @@ const Comparison = () => {
       />
       <Header content="What sets us apart" center/>
       <Paragraph content="Lorem ipsum dolor sit amet, consectetur adipiscing elit." center/>
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center justify-center w-full">
+        <div className="flex flex-col items-center justify-center w-full">
+          <h1>{}</h1>
+          <p>{}</p>
+        </div>
+      </div>
     </div>
   );
 };
