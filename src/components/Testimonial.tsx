@@ -4,7 +4,9 @@ const Testimonial = () => {
       <div className="flex w-full justify-center items-center">
         <div className="bg-[#b6ff9c] px-8 pt-8 rounded-xl w-fit text-black flex flex-col">
           <div>
-            <h1 className="text-[24px] md:text-[28px] lg:text-[32px] font-bold">“Working with Dalma has been a breeze from the very start.”</h1>
+            <h1 className="text-[24px] md:text-[28px] lg:text-[32px] font-bold">
+              “Working with Dalma has been a breeze from the very start.”
+            </h1>
             <div className="flex items-center my-5 gap-2">
               <div>
                 <img
@@ -15,7 +17,7 @@ const Testimonial = () => {
                 />
               </div>
               <div>
-                <h1 className=" font-semibold">Joe Schmoe</h1>
+                <h1 className="font-semibold">Joe Schmoe</h1>
                 <p className="text-gray-600">Director @Sitemark</p>
               </div>
             </div>
