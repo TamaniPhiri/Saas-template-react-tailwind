@@ -51,7 +51,7 @@ const Testimonial = () => {
               </div>
             </div>
           ))}
-          <div className="flex text-left my-3  gap-3">
+          <div className="flex text-left my-3 gap-3">
             <span>
               To learn more about us click{" "}
               <a href="#" className="text-[#b6ff9c]">
