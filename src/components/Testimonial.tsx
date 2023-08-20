@@ -20,7 +20,7 @@ const Testimonial = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="flex w-full justify-start">
             <img
               src="https://assets.website-files.com/62bea764d94f5f7e03ba6535/62c30f17d05b1ed81196575e_Green%20block%20graphic.svg"
               alt="block"
