@@ -8,7 +8,7 @@ const ClientLogos: React.FC<{ images: string[] }> = ({
   <>
     <SliderContainer className="" contentWidth={1290} initialOffsetX={0}>
       {images.map((image,index) => (
-        <SliderItem key={index} width={150}>
+        <SliderItem key={index} width={200}>
           <img className="object-contain h-10" src={image} alt="" />
         </SliderItem>
       ))}

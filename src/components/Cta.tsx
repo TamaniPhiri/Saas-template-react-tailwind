@@ -1,9 +1,6 @@
 import Button from "./Global/Button";
 import Header from "./Global/Header";
 import Paragraph from "./Global/Paragraph";
-import SizeObserver from "../../utils/SizeObserver";
-import CheckedItems from "./checked-items";
-import { texts } from "../constants/Checked";
 const Cta = () => {
   return (
     <div className="flex flex-col w-full min-h-screen px-4 gap-3 md:px-12 items-center justify-center">
@@ -25,13 +22,6 @@ const Cta = () => {
       <div className="flex gap-3 items-center my-5">
         <Button content="Get started" secondary />
         <Button content="Other templates" primary />
-      </div>
-      <div>
-        <SizeObserver>
-          <div className="grid place-items-center w-full md:max-w-md lg:max-w-3xl">
-            <CheckedItems items={texts}/>
-          </div>
-        </SizeObserver>
       </div>
     </div>
   );
