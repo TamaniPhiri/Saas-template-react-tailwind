@@ -3,7 +3,7 @@ import Paragraph from "./Global/Paragraph";
 
 const Hero = () => {
   return (
-    <div className="flex items-center flex-col min-h-screen relative justify-center w-full px-4 md:px-12">
+    <div className="flex items-center flex-col py-24 lg:min-h-screen relative justify-center w-full px-4 md:px-12">
       <img
         src="https://assets.website-files.com/62bea764d94f5f7e03ba6535/62beab4349f925338e0e00c0_Hero%20left%20gradient.png"
         alt="bgRight"

@@ -8,7 +8,7 @@ const Brands = () => {
       <h1 className="font-bold text-xl mb-6">Trusted by these brands:</h1>
       <div className="overflow-hidden bg-black mb-20">
         <SizeObserver>
-          <div className="grid place-items-center w-full md:max-w-md lg:max-w-xl">
+          <div className="grid place-items-center w-full md:max-w-md lg:max-w-3xl">
             <ClientLogos images={brands} />
           </div>
         </SizeObserver>
