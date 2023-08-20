@@ -5,9 +5,9 @@ const Brands = () => {
     <div className="h-auto flex justify-center px-4 md:px-12 items-center w-full overflow-hidden flex-col relative">
       <h1 className="font-bold text-xl mb-6">Trusted by these brands:</h1>
       <div className="overflow-hidden bg-black mb-20">
-        <div className="slide flex gap-16">
+        <div className="flex gap-16">
           {brands.map((item, index) => (
-            <img key={index} src={item.image} alt={item.name} loading="lazy" />
+            <img key={index} id="scroll-text" src={item.image} alt={item.name} loading="lazy" />
           ))}
         </div>
       </div>
