@@ -34,20 +34,23 @@ const Testimonial = () => {
           </div>
         </div>
       </div>
-      <div className="flex w-full items-center justify-center">
+      <div className="flex w-full flex-col items-center justify-center">
         <div className="flex flex-col max-w-sm gap-8">
           {reviews.map((item, index) => (
             <div key={index}>
               <div>
                 <Stars />
               </div>
-              <h1 className="my-4 font-bold text-xl">"{item.message}"</h1>
+              <h1 className="my-5 font-bold text-xl">"{item.message}"</h1>
               <div>
                 <span>Rated {item.rate}/5</span> -{" "}
-                <span className=" text-gray-500">{item.reviews} Reviews</span>
+                <span className=" text-zinc-400">{item.reviews} Reviews</span>
               </div>
             </div>
           ))}
+        </div>
+        <div>
+          <span>To learn more about us click <a href="#">here</a></span>
         </div>
       </div>
     </div>
