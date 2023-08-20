@@ -3,8 +3,9 @@ import { reviews } from "../constants/Testimonials";
 
 const Testimonial = () => {
   return (
-    <div className="grid min-h-screen items-center lg:grid-cols-2 px-4 md:px-12 grid-cols-1">
-      <div className="flex w-full justify-center items-center">
+    <div className="grid min-h-screen bg-red-200 items-center lg:grid-cols-2 px-4 md:px-12 grid-cols-1">
+      {/* Left Green Card */}
+      <div className="flex w-full lg:justify-center items-center">
         <div className="bg-[#b6ff9c] px-8 pt-8 rounded-xl w-fit text-black flex flex-col">
           <div className=" w-fit max-w-md">
             <h1 className="text-[24px] md:text-[28px] lg:text-[32px] font-bold">
@@ -34,6 +35,8 @@ const Testimonial = () => {
           </div>
         </div>
       </div>
+
+      {/* Right Card- Reviews */}
       <div className="flex w-full flex-col items-center justify-center">
         <div className="flex flex-col max-w-sm gap-8">
           {reviews.map((item, index) => (
@@ -48,7 +51,7 @@ const Testimonial = () => {
               </div>
             </div>
           ))}
-          <div className="flex text-left gap-3">
+          <div className="flex text-left my-3  gap-3">
             <span>
               To learn more about us click{" "}
               <a href="#" className="text-[#b6ff9c]">
