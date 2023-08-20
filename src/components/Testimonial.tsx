@@ -2,7 +2,7 @@ import { reviews } from "../constants/Testimonials";
 
 const Testimonial = () => {
   return (
-    <div className="grid min-h-screen items-center md:grid-cols-2 px-4 md:px-12 grid-cols-1">
+    <div className="grid min-h-screen items-center lg:grid-cols-2 px-4 md:px-12 grid-cols-1">
       <div className="flex w-full justify-center items-center">
         <div className="bg-[#b6ff9c] px-8 pt-8 rounded-xl w-fit text-black flex flex-col">
           <div className=" w-fit max-w-md">
