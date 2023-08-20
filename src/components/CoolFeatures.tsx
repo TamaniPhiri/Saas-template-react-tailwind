@@ -11,7 +11,7 @@ const CoolFeatures = () => {
         {coolFeature.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center gap-3 bg-white/10 bg-opacity-20 backdrop-blur-sm p-5 rounded-xl w-full"
+            className="flex flex-col items-start gap-3 bg-white/10 bg-opacity-20 backdrop-blur-sm p-5 rounded-xl w-full"
           >
             <div className="bg-[#b6ff9c] rounded-full p-3">
               <img
@@ -21,8 +21,9 @@ const CoolFeatures = () => {
                 className="object-cover object-center h-10"
               />
             </div>
+
             <h1 className="font-bold text-xl md:text-2xl">{item.title}</h1>
-            <p className="w-full md:text-base text-sm text-center text-zinc-300">
+            <p className="w-full md:text-base text-sm text-left text-zinc-300">
               {item.description}
             </p>
           </div>
