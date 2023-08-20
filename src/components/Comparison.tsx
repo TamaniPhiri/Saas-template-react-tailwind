@@ -1,6 +1,8 @@
 const Comparison = () => {
   return (
-    <div>Comparison</div>
+    <div className="flex flex-col w-full px-4 md:px-12 items-center justify-center">
+
+    </div>
   )
 }
 
