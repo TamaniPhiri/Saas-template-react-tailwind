@@ -26,11 +26,11 @@ const Comparison = () => {
                 src={item.image}
                 alt={item.title}
                 loading="lazy"
-                className=""
+                className="object-cover object-center w-full h-full"
               />
             </div>
             <h1>{item.title}</h1>
-            <p>{item.description}</p>
+            <p className="w-full text-center">{item.description}</p>
           </div>
         ))}
       </div>
