@@ -14,7 +14,7 @@ const Button: React.FC<ButtonProps> = ({
   plain,
 }) => {
   return (
-    <div
+    <button
       className={`${widthFull ? "w-full" : "md:w-fit w-full"} ${
         secondary ? "bg-[#b6ff9c] text-black" : ""
       } ${primary ? "bg-white/10 bg-opacity-20 backdrop-blur-sm" : ""} rounded-full ${
@@ -22,7 +22,7 @@ const Button: React.FC<ButtonProps> = ({
       } text-center hover:scale-95 active:scale-105 w-fit font-semibold hover:opacity-70 transform transition-all duration-500 delay-200 cursor-pointer`}
     >
       {content}
-    </div>
+    </button>
   );
 };
 

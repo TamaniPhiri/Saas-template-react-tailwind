@@ -6,7 +6,7 @@ import FeaturesTop from "./components/FeaturesTop";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import Pricing from "./components/Pricing";
+import Testimonial from "./components/Testimonial";
 import PricingTable from "./components/PricingTable";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       <Brands/>
       <FeaturesTop />
       <FeatureDetails />
-      <Pricing />
+      <Testimonial />
       <PricingTable />
       <Cta />
       <Footer />
