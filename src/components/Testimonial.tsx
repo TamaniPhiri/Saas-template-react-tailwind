@@ -48,9 +48,14 @@ const Testimonial = () => {
               </div>
             </div>
           ))}
-        </div>
-        <div>
-          <span>To learn more about us click <a href="#" className="text-[#b6ff9c]">here</a></span>
+          <div className="flex text-left gap-3">
+            <span>
+              To learn more about us click{" "}
+              <a href="#" className="text-[#b6ff9c]">
+                here
+              </a>
+            </span>
+          </div>
         </div>
       </div>
     </div>
