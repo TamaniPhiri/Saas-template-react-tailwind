@@ -4,8 +4,8 @@ interface ScrollValue {
   innerWidth: number;
 }
 interface SizeObserverProps {
-    children: React.ReactNode;
-  }
+  children: React.ReactNode;
+}
 
 export const SizeContext = React.createContext<ScrollValue>({ innerWidth: 0 });
 const SizeObserver: React.FC<SizeObserverProps> = ({ children }) => {
