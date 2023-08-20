@@ -1,8 +1,7 @@
-import React from "react";
 import SliderContainer, { SliderItem } from "./slider";
 
 const ClientLogos: React.FC<{ images: string[] }> = ({
-  images
+  images,
 }: {
   images: string[];
 }) => (
