@@ -1,3 +1,4 @@
+import { comparisons } from "../constants/Comparisons";
 import Header from "./Global/Header";
 import Paragraph from "./Global/Paragraph";
 
@@ -9,13 +10,29 @@ const Comparison = () => {
         alt="GreenLine"
         loading="lazy"
       />
-      <Header content="What sets us apart" center/>
-      <Paragraph content="Lorem ipsum dolor sit amet, consectetur adipiscing elit." center/>
+      <Header content="What sets us apart" center />
+      <Paragraph
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        center
+      />
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center justify-center w-full">
-        <div className="flex flex-col items-center justify-center w-full">
-          <h1>{}</h1>
-          <p>{}</p>
-        </div>
+        {comparisons.map((item, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center justify-center w-full"
+          >
+            <div className="bg-[#b6ff9c] rounded-full">
+              <img
+                src={item.image}
+                alt={item.title}
+                loading="lazy"
+                className=""
+              />
+            </div>
+            <h1>{item.title}</h1>
+            <p>{item.description}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
