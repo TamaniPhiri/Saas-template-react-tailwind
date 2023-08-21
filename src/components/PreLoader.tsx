@@ -10,16 +10,22 @@ const PreLoader = () => {
   }, [IsInView]);
 
   const animate = {
-    initial: { y: "50%", opacity: 0 },
+    initial: { y: "50%", opacity: 0, staggerChildren: 0.5 },
     open: {
       y: "0%",
       opacity: 1,
-      transition: { duration: 1, type: "spring", damping: 20, stiffness: 100 },
+      transition: {
+        duration: 1,
+        type: "spring",
+        damping: 20,
+        stiffness: 100,
+        staggerChildren: 0.015,
+      },
     },
   };
   return (
     <motion.div
-      initial={{ x: 0, clipPath: "inset(0% 0% 0% 0%)",}}
+      initial={{ x: 0, clipPath: "inset(0% 0% 0% 0%)" }}
       whileInView={{ x: "100%", clipPath: "inset(0% 0% 0% 70%)" }}
       transition={{ delay: 2, duration: 5 }}
       className="absolute inset-0 z-[60] bg-[#b6ff9c]"
