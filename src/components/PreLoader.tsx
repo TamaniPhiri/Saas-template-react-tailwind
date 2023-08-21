@@ -10,32 +10,36 @@ const PreLoader = () => {
   }, [IsInView]);
 
   const animate = {
-    initial: { y: "100%" },
-    open: { y: "0%", x: 100, transition: { duration: 1 } },
-    exit: { y: "-100%" },
+    initial: { y: "100%", opacity: 0 },
+    open: { y: "0%", opacity: 1, transition: { duration: 1 } },
   };
   return (
     <motion.div
-      initial={{ x: 0 }}
-      whileInView={{ x: "100%" }}
+      initial={{ x: 0, clipPath: "inset(0% 0% 0% 0%)" }}
+      whileInView={{ x: "100%", clipPath: "inset(0% 0% 0% 70%)" }}
       transition={{ delay: 2, duration: 5 }}
-      className="absolute inset-0 z-[60]"
+      className="absolute inset-0 z-[60] bg-[#b6ff9c]"
     >
       <div
         ref={body}
-        className="bg-[#b6ff9c] text-black h-fit min-h-screen lineMask overflow-hidden items-center flex py-56"
+        className=" text-black h-fit min-h-screen lineMask overflow-hidden items-center flex py-56"
       >
         <motion.p
           variants={animate}
           initial="initial"
-          animate={IsInView ? "open" : "exit"}
-          className="text-6xl md:text-9xl flex gap-7 items-center overflow-hidden pl-5 m-0 font-bold tracking-wide"
+          animate={IsInView ? "open" : ""}
+          className="text-6xl md:text-9xl flex gap-2 md:gap-7 items-center overflow-hidden pl-5 m-0 font-bold tracking-wide"
         >
           <span>Hello.</span>
           <motion.span
-            initial={{ scale: 0 }}
-            whileInView={{ scale: 1 }}
-            transition={{ delay: 2, duration: 1.3 }}
+            initial={{ scale: 0, rotate: 0 }}
+            whileInView={{ scale: 1, rotate: 6 }}
+            transition={{
+              delay: 2,
+              duration: 0.7,
+              delayChildren: 0.3,
+              staggerChildren: 0.05,
+            }}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
