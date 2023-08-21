@@ -8,9 +8,9 @@ const PreLoader = () => {
   }, []);
   return (
     <motion.div
-      initial={loaded ? {} : {clipPath: "circle(138.1% at 98% 3%)", x: 0 }}
-      whileInView={loaded ? {clipPath: "circle(0% at 100% 0%)", x: "45%" } : {}}
-      transition={{ delay: 1, duration: 4.5 }}
+      initial={loaded ? {} : {clipPath: "circle(140% at 100% 0)", x: 0 }}
+      whileInView={loaded ? {clipPath: "circle(0.0% at 100% 0)", x: "50%" } : {}}
+      transition={{ delay: 0.4, duration: 2.5 }}
       className="absolute inset-0 z-[60] bg-[#b6ff9c]"
     >
       <div className=" text-black h-fit min-h-screen lineMask overflow-hidden items-center flex py-56">
@@ -19,8 +19,8 @@ const PreLoader = () => {
             initial={{ clipPath: "inset(100% 0% 0% 0%)" }}
             whileInView={{ clipPath: "inset(0% 0% 0% 0%)" }}
             transition={{
-              duration: 0.7,
-              delayChildren: 0.3,
+              duration: 0.5,
+              delayChildren: 0.2,
               staggerChildren: 0.05,
             }}
           >
@@ -30,8 +30,8 @@ const PreLoader = () => {
             initial={{ scale: 0}}
             whileInView={{ scale: 1}}
             transition={{
-              delay: 1,
-              duration: 0.7,
+              delay: 0.2,
+              duration: 0.3,
               delayChildren: 0.3,
               staggerChildren: 0.05,
             }}
