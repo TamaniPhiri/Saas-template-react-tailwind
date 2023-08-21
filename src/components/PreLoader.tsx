@@ -14,7 +14,7 @@ const PreLoader = () => {
       className="absolute inset-0 z-[60] bg-[#b6ff9c]"
     >
       <div className=" text-black h-fit min-h-screen lineMask overflow-hidden items-center flex py-56">
-        <div className="text-7xl md:text-9xl flex gap-2 md:gap-7 items-center overflow-hidden pl-5 m-0 font-bold tracking-wide">
+        <div className="text-9xl flex gap-2 md:gap-7 items-center overflow-hidden pl-5 m-0 font-bold tracking-wide">
           <motion.span
             initial={{ clipPath: "inset(100% 0% 0% 0%)" }}
             whileInView={{ clipPath: "inset(0% 0% 0% 0%)" }}
@@ -40,9 +40,9 @@ const PreLoader = () => {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              strokeWidth={2.2}
+              strokeWidth={1.3}
               stroke="currentColor"
-              className="md:w-32 w-24 md:h-32 h-24"
+              className="md:w-32 w-28 md:h-32 h-28"
             >
               <path
                 strokeLinecap="round"
