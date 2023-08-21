@@ -10,7 +10,7 @@ const PreLoader = () => {
     <motion.div
       initial={loaded ? {} : {clipPath: "circle(140% at 100% 0)", x: 0 }}
       whileInView={loaded ? {clipPath: "circle(0.0% at 100% 0)", x: "50%" } : {}}
-      transition={{ delay: 0.4, duration: 2.5 }}
+      transition={{ delay: 0.4, duration: 2.5,ease:"easeInOut"}}
       className="absolute inset-0 z-[60] bg-[#b6ff9c]"
     >
       <div className=" text-black h-fit min-h-screen lineMask overflow-hidden items-center flex py-56">
