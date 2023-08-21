@@ -13,7 +13,7 @@ const Brands = () => {
       </div>
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
+        whileInView={{ opacity: 1, scale: 1,clipPath:"circle(70%)" }}
         transition={{ duration: 0.5, type: "tween" }}
         className="rounded-xl bg-black p-2"
       >
