@@ -1,7 +1,12 @@
 import { motion } from "framer-motion";
 import Button from "./Global/Button";
 import Paragraph from "./Global/Paragraph";
+import { useEffect, useState } from "react";
 const Hero = () => {
+  const [loaded, setLoaded] = useState(false);
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
   return (
     <div className="flex items-center flex-col py-24 lg:min-h-screen relative justify-center w-full px-4 md:px-12">
       <img
@@ -17,9 +22,9 @@ const Hero = () => {
         className=" absolute right-0 top-0 z-0"
       />
       <motion.div
-        initial={{ opacity: 0, scale: 0.7 }}
+        initial={loaded ? {} : { opacity: 0, scale: 0.7 }}
         whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 2, duration: 1, type: "tween" }}
+        transition={loaded ? { delay: 2, duration: 1, type: "tween" } : {}}
         className="z-20"
       >
         <div className="w-full flex my-5 items-center justify-center">
