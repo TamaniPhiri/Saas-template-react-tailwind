@@ -1,28 +1,6 @@
-import { motion, useInView } from "framer-motion";
-import { useRef, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const PreLoader = () => {
-  const body = useRef(null);
-  const IsInView = useInView(body, { once: true, margin: "-10%" });
-
-  useEffect(() => {
-    console.log(IsInView);
-  }, [IsInView]);
-
-  const animate = {
-    initial: { y: "50%", opacity: 0, staggerChildren: 0.5 },
-    open: {
-      y: "0%",
-      opacity: 1,
-      transition: {
-        duration: 1,
-        type: "spring",
-        damping: 20,
-        stiffness: 100,
-        staggerChildren: 0.015,
-      },
-    },
-  };
   return (
     <motion.div
       initial={{ x: 0, clipPath: "inset(0% 0% 0% 0%)" }}
@@ -30,19 +8,17 @@ const PreLoader = () => {
       transition={{ delay: 2, duration: 5 }}
       className="absolute inset-0 z-[60] bg-[#b6ff9c]"
     >
-      <div
-        ref={body}
-        className=" text-black h-fit min-h-screen lineMask overflow-hidden items-center flex py-56"
-      >
-        <motion.p
-          variants={animate}
-          initial="initial"
-          animate={IsInView ? "open" : ""}
-          className="text-7xl md:text-9xl flex gap-2 md:gap-7 items-center overflow-hidden pl-5 m-0 font-bold tracking-wide"
-        >
+      <div className=" text-black h-fit min-h-screen lineMask overflow-hidden items-center flex py-56">
+        <div className="text-7xl md:text-9xl flex gap-2 md:gap-7 items-center overflow-hidden pl-5 m-0 font-bold tracking-wide">
           <motion.span
-            initial={{ clipPath: "inset(100% 0% 0% 0%)" }}
+            initial={{ clipPath: "inset(-100% 0% 0% 0%)" }}
             whileInView={{ clipPath: "inset(0% 0% 0% 0%)" }}
+            initial={{}}
+            transition={{
+              duration: 0.7,
+              delayChildren: 0.3,
+              staggerChildren: 0.05,
+            }}
           >
             Hello
           </motion.span>
@@ -72,7 +48,7 @@ const PreLoader = () => {
               />
             </svg>
           </motion.span>
-        </motion.p>
+        </div>
       </div>
     </motion.div>
   );
