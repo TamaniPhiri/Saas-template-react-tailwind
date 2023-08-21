@@ -8,8 +8,8 @@ const PreLoader = () => {
   }, []);
   return (
     <motion.div
-      initial={loaded ? {} : { x: 0, clipPath: "inset(0% 0% 0% 0%)" }}
-      whileInView={loaded ? { x: "100%", clipPath: "inset(0% 0% 0% 70%)" } : {}}
+      initial={loaded ? {} : {clipPath: "circle(138.1% at 98% 3%)", x: 0 }}
+      whileInView={loaded ? {clipPath: "circle(0% at 100% 0%)", x: "45%" } : {}}
       transition={{ delay: 1, duration: 4.5 }}
       className="absolute inset-0 z-[60] bg-[#b6ff9c]"
     >
