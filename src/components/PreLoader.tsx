@@ -32,7 +32,7 @@ const PreLoader = () => {
           variants={animate}
           initial="initial"
           animate={IsInView ? "open" : ""}
-          className="text-6xl md:text-9xl flex gap-2 md:gap-7 items-center overflow-hidden pl-5 m-0 font-bold tracking-wide"
+          className="text-7xl md:text-9xl flex gap-2 md:gap-7 items-center overflow-hidden pl-5 m-0 font-bold tracking-wide"
         >
           <span>Hello.</span>
           <motion.span
@@ -51,7 +51,7 @@ const PreLoader = () => {
               viewBox="0 0 24 24"
               strokeWidth={2.2}
               stroke="currentColor"
-              className="w-32 h-32"
+              className="md:w-32 w-24 md:h-32 h-24"
             >
               <path
                 strokeLinecap="round"
