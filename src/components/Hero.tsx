@@ -23,8 +23,8 @@ const Hero = () => {
       />
       <motion.div
         initial={loaded ? {} : { opacity: 0, scale: 0.7 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={loaded ? { delay: 2, duration: 1, type: "tween" } : {}}
+        whileInView={loaded ? { opacity: 1, scale: 1 } : {}}
+        transition={{ delay: 2, duration: 1, type: "tween" }}
         className="z-20"
       >
         <div className="w-full flex my-5 items-center justify-center">
