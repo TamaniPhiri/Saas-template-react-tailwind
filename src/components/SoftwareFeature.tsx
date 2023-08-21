@@ -1,20 +1,32 @@
 import Button from "./Global/Button";
 import Header from "./Global/Header";
 import Paragraph from "./Global/Paragraph";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+
 
 const SoftwareFeature = () => {
+  const [loaded, setLoaded] = useState(false);
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
   return (
     <div className="flex lg:min-h-screen py-28 items-center justify-center w-full px-4 md:px-12">
       <div className="grid grid-cols-1 relative lg:grid-cols-2 overflow-hidden bg-[#1a1a1a] rounded-3xl h-full w-full">
-        <div className="flex flex-col gap-3 z-40 p-4 md:p-8 lg:p-16 md:max-w-lg max-w-md">
+        <motion.div
+          initial={loaded ? {} : { opacity: 0, x: -50 }}
+          whileInView={loaded ? { opacity: 1, x: 0 } : {}}
+          transition={{ delay: 0.2, duration: 1, type: "tween" }}
+          className="flex flex-col gap-3 z-40 p-4 md:p-8 lg:p-16 md:max-w-lg max-w-md"
+        >
           <span className="text-[#b6ff9c] font-bold text-lg">
             Software feature
           </span>
-          <Header content="Create stunning websites with Dalma"/>
-          <Paragraph content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at eleifend senectus."/>
+          <Header content="Create stunning websites with Dalma" />
+          <Paragraph content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at eleifend senectus." />
           <div className="flex gap-2 md:flex-row flex-col my-3">
-            <Button content="Get started" secondary widthFull={false}/>
-            <Button content="Other templates" primary widthFull={false}/>
+            <Button content="Get started" secondary widthFull={false} />
+            <Button content="Other templates" primary widthFull={false} />
           </div>
           <div className="flex gap-3 items-center mt-12">
             <img
@@ -42,7 +54,7 @@ const SoftwareFeature = () => {
               className="group-hover:translate-x-2 transform transition-all duration-300 ease-in-out"
             />
           </a>
-        </div>
+        </motion.div>
         <div className="">
           <img
             src="https://assets.website-files.com/62bea764d94f5f7e03ba6535/62beab431cc502479aec7741_Hero%20right%20gradient.png"
