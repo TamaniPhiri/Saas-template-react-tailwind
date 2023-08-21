@@ -7,6 +7,9 @@ const Footer = () => {
         loading="lazy"
         className=" absolute bottom-0 right-0"
       />
+      <div>
+        heello
+      </div>
     </div>
   );
 };
