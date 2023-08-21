@@ -10,8 +10,12 @@ const PreLoader = () => {
   }, [IsInView]);
 
   const animate = {
-    initial: { y: "100%", opacity: 0 },
-    open: { y: "0%", opacity: 1, transition: { duration: 1 } },
+    initial: { y: "50%", opacity: 0 },
+    open: {
+      y: "0%",
+      opacity: 1,
+      transition: { duration: 1, type: "spring", damping: 20, stiffness: 100 },
+    },
   };
   return (
     <motion.div
