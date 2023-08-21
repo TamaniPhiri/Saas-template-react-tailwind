@@ -1,13 +1,8 @@
 import { brands } from "../constants/Brand";
 import ClientLogos from "./client-logos";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 
 const Brands = () => {
-  const [loaded, setLoaded] = useState(false);
-  useEffect(() => {
-    setLoaded(true);
-  }, []);
   return (
     <div className="h-auto flex justify-center px-4 md:px-12 items-center w-full overflow-hidden flex-col relative">
       <h1 className="font-bold text-xl mb-6">Trusted by these brands:</h1>
@@ -17,9 +12,9 @@ const Brands = () => {
         </div>
       </div>
       <motion.div
-        initial={loaded ? {} : { opacity: 0, scale: 0.9 }}
-        whileInView={loaded ? { opacity: 1, scale: 1 } : {}}
-        transition={{duration: 1, type: "tween" }}
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1, type: "tween" }}
         className="rounded-xl bg-black p-2"
       >
         <img
