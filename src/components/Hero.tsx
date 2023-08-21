@@ -1,6 +1,6 @@
+import { motion } from "framer-motion";
 import Button from "./Global/Button";
 import Paragraph from "./Global/Paragraph";
-
 const Hero = () => {
   return (
     <div className="flex items-center flex-col py-24 lg:min-h-screen relative justify-center w-full px-4 md:px-12">
@@ -16,7 +16,7 @@ const Hero = () => {
         loading="lazy"
         className=" absolute right-0 top-0 z-0"
       />
-      <div className="z-20">
+      <motion.div initial={{opacity:0,y:-50}} whileInView={{opacity:1,y:0}} transition={{delay:3.8,duration:1,type:"tween"}} className="z-20">
         <div className="w-full flex my-5 items-center justify-center">
           <div className="bg-[#1a1a1a] gap-2 rounded-full py-2 md:px-6 px-4 w-fit flex md:flex-row flex-col items-center">
             <img
@@ -41,11 +41,11 @@ const Hero = () => {
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           center
         />
-      </div>
-      <div className="flex justify-center w-full flex-col md:flex-row z-10 my-8 items-center gap-3">
+      </motion.div>
+      <motion.div initial={{opacity:0,y:60}} whileInView={{opacity:1,y:0}} transition={{delay:3.9,duration:1,type:"tween"}} className="flex justify-center w-full flex-col md:flex-row z-10 my-8 items-center gap-3">
         <Button content="Get started" secondary widthFull={false}/>
         <Button content="Sign up" primary widthFull={false}/>
-      </div>
+      </motion.div>
     </div>
   );
 };
