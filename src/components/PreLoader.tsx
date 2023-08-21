@@ -11,9 +11,8 @@ const PreLoader = () => {
       <div className=" text-black h-fit min-h-screen lineMask overflow-hidden items-center flex py-56">
         <div className="text-7xl md:text-9xl flex gap-2 md:gap-7 items-center overflow-hidden pl-5 m-0 font-bold tracking-wide">
           <motion.span
-            initial={{ clipPath: "inset(-100% 0% 0% 0%)" }}
+            initial={{ clipPath: "inset(100% 0% 0% 0%)" }}
             whileInView={{ clipPath: "inset(0% 0% 0% 0%)" }}
-            initial={{}}
             transition={{
               duration: 0.7,
               delayChildren: 0.3,
