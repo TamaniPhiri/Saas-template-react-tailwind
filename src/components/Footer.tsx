@@ -1,15 +1,16 @@
 import { footLinks } from "../constants/footer-links";
+import NewsLetter from "./NewsLetter";
 
 const Footer = () => {
   return (
-    <div className=" relative min-h-screen py-24 px-4 md:px-12 items-center justify-center">
+    <div className=" relative min-h-screen py-24 flex-col w-full px-4 md:px-12 items-center justify-center">
       <img
         src="https://assets.website-files.com/62bea764d94f5f7e03ba6535/62c7eaa512be423d96d9fcae_Bottom%20corner%20gradient.png"
         alt="bg"
         loading="lazy"
         className=" absolute bottom-0 z-10 right-0"
       />
-      <div className="grid lg:grid-cols-2 z-50 grid-cols-1 px-4 overflow-hidden w-full mt-12 justify-center gap-5">
+      <div className="grid lg:grid-cols-2 z-50 grid-cols-1 px-4 overflow-hidden w-full justify-center gap-5">
         {/* Left Grid Links */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 items-center w-full justify-center gap-3">
           <div>
@@ -80,6 +81,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <NewsLetter/>
     </div>
   );
 };
