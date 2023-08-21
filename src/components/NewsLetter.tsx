@@ -10,8 +10,8 @@ const NewsLetter = () => {
         />
       </div>
       <div className="flex gap-4 md:flex-row flex-col">
-        <input type="text" className=" bg-transparent border-b px-2 py-5"/>
-        <Button content="Subscribe" widthFull={false} secondary/>
+        <input type="text" className=" bg-transparent border-b px-2 py-5" placeholder="Your email"/>
+        <Button content="Subscribe" widthFull={false} secondary />
       </div>
     </div>
   );
