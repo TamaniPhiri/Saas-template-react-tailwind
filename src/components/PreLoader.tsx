@@ -1,13 +1,18 @@
 import { motion, useInView } from "framer-motion";
-import {useRef,useEffect} from 'react'
+import { useRef, useEffect } from "react";
 
 const PreLoader = () => {
-    const body=useRef(null)
-    const IsInView=useInView(body,{once:true, margin:"-10%"})
+  const body = useRef(null);
+  const IsInView = useInView(body, { once: true, margin: "-10%" });
 
-    useEffect(()=>{
-        console.log(IsInView);
-    },[IsInView])
+  useEffect(() => {
+    console.log(IsInView);
+  }, [IsInView]);
+
+  const animate = {
+    initial: { y: "100%" },
+    open: { y: "0%", transition: { duration: 1 } },
+  };
   return (
     <motion.div
       initial={{ x: 0, scaleX: 1 }}
@@ -15,8 +20,16 @@ const PreLoader = () => {
       transition={{ delay: 1, duration: 2 }}
       className="absolute inset-0 z-[60]"
     >
-      <div ref={body} className="bg-[#b6ff9c] text-black h-fit min-h-screen lineMask overflow-hidden items-center flex py-56">
-        <motion.span initial={{translateY:50}} className="text-6xl md:text-9xl overflow-hidden -mt-4 pl-5 m-0 font-bold tracking-wide">
+      <div
+        ref={body}
+        className="bg-[#b6ff9c] text-black h-fit min-h-screen lineMask overflow-hidden items-center flex py-56"
+      >
+        <motion.span
+          variants={animate}
+          initial="initial"
+          animate={IsInView ? "open" : ""}
+          className="text-6xl md:text-9xl overflow-hidden -mt-4 pl-5 m-0 font-bold tracking-wide"
+        >
           Hello.
         </motion.span>
       </div>
