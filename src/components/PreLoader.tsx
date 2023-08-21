@@ -1,10 +1,15 @@
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const PreLoader = () => {
+  const [loaded, setLoaded] = useState(false);
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
   return (
     <motion.div
-      initial={{ x: 0, clipPath: "inset(0% 0% 0% 0%)" }}
-      whileInView={{ x: "100%", clipPath: "inset(0% 0% 0% 70%)" }}
+      initial={loaded ? {} : { x: 0, clipPath: "inset(0% 0% 0% 0%)" }}
+      whileInView={loaded ? { x: "100%", clipPath: "inset(0% 0% 0% 70%)" } : {}}
       transition={{ delay: 1, duration: 4.5 }}
       className="absolute inset-0 z-[60] bg-[#b6ff9c]"
     >
@@ -25,7 +30,7 @@ const PreLoader = () => {
             initial={{ scale: 0, rotate: 0 }}
             whileInView={{ scale: 1, rotate: 6 }}
             transition={{
-              delay: 2,
+              delay: 1,
               duration: 0.7,
               delayChildren: 0.3,
               staggerChildren: 0.05,
