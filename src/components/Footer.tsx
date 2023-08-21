@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
         {/* Right Grid Icons */}
         <div className="w-full flex gap-3 z-50 lg:justify-end">
-          <div className="h-fit p-3 w-fit items-center justify-center bg-white rounded-full">
+          <div className="h-fit hover:bg-gray-300 transform transition-all p-3 w-fit items-center justify-center bg-white rounded-full">
             <img
               src="https://assets.website-files.com/62bea764d94f5f7e03ba6535/62c7e9e10e3c5b9299773072_instagram%201.svg"
               alt="instagram"
@@ -63,7 +63,7 @@ const Footer = () => {
               className="w-full h-full object-cover object-center"
             />
           </div>
-          <div className="h-fit py-3 px-4 w-fit items-center justify-center bg-white rounded-full">
+          <div className="h-fit hover:bg-gray-300 transform transition-all py-3 px-4 w-fit items-center justify-center bg-white rounded-full">
             <img
               src="https://assets.website-files.com/62bea764d94f5f7e03ba6535/62c7e9e10e3c5b5f88773071_Facebook%201.svg"
               alt="facebook"
@@ -71,7 +71,7 @@ const Footer = () => {
               className="w-full h-full object-cover object-center"
             />
           </div>
-          <div className="h-fit p-3 w-fit items-center justify-center bg-white rounded-full">
+          <div className="h-fit hover:bg-gray-300 transform transition-all p-3 w-fit items-center justify-center bg-white rounded-full">
             <img
               src="https://assets.website-files.com/62bea764d94f5f7e03ba6535/62c7e9e10e3c5b45f6773073_twitter%201.svg"
               alt="twitter"
