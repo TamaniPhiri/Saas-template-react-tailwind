@@ -15,7 +15,7 @@ const Footer = () => {
             <h1 className="text-base md:text-xl font-bold">Company pages</h1>
             <ul>
               {footLinks.map((item, index) => (
-                <li className="py-2 md:text-base text-gray-400" key={index}>{item}</li>
+                <li className="py-2 text-sm md:text-base text-gray-400" key={index}>{item}</li>
               ))}
             </ul>
           </div>
@@ -23,7 +23,7 @@ const Footer = () => {
             <h1 className="text-base md:text-xl font-bold">Other</h1>
             <ul>
               {footLinks.map((item, index) => (
-                <li className="py-2 md:text-base text-gray-400" key={index}>{item}</li>
+                <li className="py-2 text-sm md:text-base text-gray-400" key={index}>{item}</li>
               ))}
             </ul>
           </div>
@@ -31,7 +31,7 @@ const Footer = () => {
             <h1 className="text-base md:text-xl font-bold">Template</h1>
             <ul>
               {footLinks.map((item, index) => (
-                <li className="py-2 md:text-base text-gray-400" key={index}>{item}</li>
+                <li className="py-2 text-sm md:text-base text-gray-400" key={index}>{item}</li>
               ))}
             </ul>
           </div>
