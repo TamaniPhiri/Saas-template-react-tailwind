@@ -22,7 +22,7 @@ const Hero = () => {
         className=" absolute right-0 top-0 z-0"
       />
       <motion.div
-        initial={loaded ? {} : { opacity: 0, scale: 0.7 }}
+        initial={loaded ? {} : { opacity: 0, scale: 0.8 }}
         whileInView={loaded ? { opacity: 1, scale: 1 } : {}}
         transition={{ delay: 2, duration: 1, type: "tween" }}
         className="z-20"

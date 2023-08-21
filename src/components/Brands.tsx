@@ -17,9 +17,9 @@ const Brands = () => {
         </div>
       </div>
       <motion.div
-        initial={loaded ? {} : { opacity: 0, scale: 0.7 }}
+        initial={loaded ? {} : { opacity: 0, scale: 0.9 }}
         whileInView={loaded ? { opacity: 1, scale: 1 } : {}}
-        transition={{ delay: 0.2, duration: 1, type: "tween" }}
+        transition={{duration: 1, type: "tween" }}
         className="rounded-xl bg-black p-2"
       >
         <img
