@@ -24,7 +24,7 @@ const FeaturesTop = () => {
         <motion.div
           initial={loaded ? {} : { opacity: 0, scale: 0.8 }}
           whileInView={loaded ? { opacity: 1, scale: 1 } : {}}
-          transition={{ delay: 0.3, duration: 1, type: "tween" }}
+          transition={{ delay: 0.2, duration: 1, type: "tween" }}
           className="grid grid-cols-2 bg-[#1a1a1a] overflow-hidden rounded-xl w-full items-center justify-center"
         >
           <div className="flex pl-6 pt-5 flex-col h-full justify-between w-full">
@@ -48,7 +48,12 @@ const FeaturesTop = () => {
             />
           </div>
         </motion.div>
-        <div className="grid grid-cols-2 bg-[#1a1a1a] overflow-hidden rounded-xl w-full items-center justify-center">
+        <motion.div
+          initial={loaded ? {} : { opacity: 0, scale: 0.8 }}
+          whileInView={loaded ? { opacity: 1, scale: 1 } : {}}
+          transition={{ delay: 0.4, duration: 1, type: "tween" }}
+          className="grid grid-cols-2 bg-[#1a1a1a] overflow-hidden rounded-xl w-full items-center justify-center"
+        >
           <div className="flex pl-6 pt-5 flex-col h-full justify-between w-full">
             <div>
               <Header content="Scheduling" center={false} />
@@ -69,7 +74,7 @@ const FeaturesTop = () => {
               alt="Feature"
             />
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

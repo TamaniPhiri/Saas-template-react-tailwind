@@ -55,7 +55,7 @@ const Hero = () => {
       <motion.div
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 2, duration: 1, type: "spring" }}
+        transition={{ delay: 1, duration: 1, type: "spring" }}
         className="flex justify-center w-full flex-col md:flex-row z-10 my-8 items-center gap-3"
       >
         <Button content="Get started" secondary widthFull={false} />
