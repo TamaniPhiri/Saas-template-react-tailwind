@@ -1,5 +1,4 @@
 import { brands } from "../constants/Brand";
-import SizeObserver from "../../utils/SizeObserver";
 import ClientLogos from "./client-logos";
 
 const Brands = () => {
@@ -7,11 +6,9 @@ const Brands = () => {
     <div className="h-auto flex justify-center px-4 md:px-12 items-center w-full overflow-hidden flex-col relative">
       <h1 className="font-bold text-xl mb-6">Trusted by these brands:</h1>
       <div className="overflow-hidden bg-black mb-20">
-        <SizeObserver>
-          <div className="grid place-items-center w-full md:max-w-md lg:max-w-3xl">
-            <ClientLogos images={brands} />
-          </div>
-        </SizeObserver>
+        <div className="grid place-items-center w-full md:max-w-md lg:max-w-3xl">
+          <ClientLogos images={brands} />
+        </div>
       </div>
       <div className="rounded-xl bg-black p-2">
         <img
