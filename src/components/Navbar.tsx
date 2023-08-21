@@ -9,9 +9,10 @@ const navVariants = {
     opacity: 0,
     transition: {
       type: "spring",
-      delay: 0.2,
+      delay: 0.5,
       stiffness: 300,
       damping: 140,
+      duration:1
     },
   },
   show: {
@@ -19,8 +20,10 @@ const navVariants = {
     clipPath: "circle(130% at 50% 0)",
     opacity: 1,
     transition: {
-      type: "",
+      type: "tween",
       stiffness: 80,
+      duration:0.4,
+      delay:0.1
     },
   },
 };
