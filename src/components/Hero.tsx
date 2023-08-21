@@ -17,9 +17,9 @@ const Hero = () => {
         className=" absolute right-0 top-0 z-0"
       />
       <motion.div
-        initial={{ opacity: 0, y: -50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 3.8, duration: 1, type: "tween" }}
+        initial={{ opacity: 0, scale: 0.7 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 2, duration: 1, type: "tween" }}
         className="z-20"
       >
         <div className="w-full flex my-5 items-center justify-center">
