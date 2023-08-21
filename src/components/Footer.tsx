@@ -12,13 +12,13 @@ const Footer = () => {
       />
       <div className="grid lg:grid-cols-2 z-50 grid-cols-1 px-4 overflow-hidden w-full justify-center gap-5">
         {/* Left Grid Links */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 items-center w-full justify-center gap-3">
+        <div className="grid md:grid-cols-2 z-50 lg:grid-cols-3 grid-cols-1 items-center w-full justify-center gap-3">
           <div>
             <h1 className="text-base md:text-xl font-bold">Company pages</h1>
             <ul>
               {footLinks.map((item, index) => (
                 <li
-                  className="py-2 text-sm md:text-base text-gray-400"
+                  className="py-2 hover:text-white transform transition-all text-sm md:text-base text-gray-400"
                   key={index}
                 >
                   {item}
@@ -31,7 +31,7 @@ const Footer = () => {
             <ul>
               {footLinks.map((item, index) => (
                 <li
-                  className="py-2 text-sm md:text-base text-gray-400"
+                  className="py-2 hover:text-white transform transition-all text-sm md:text-base text-gray-400"
                   key={index}
                 >
                   {item}
@@ -44,7 +44,7 @@ const Footer = () => {
             <ul>
               {footLinks.map((item, index) => (
                 <li
-                  className="py-2 text-sm md:text-base text-gray-400"
+                  className="py-2 hover:text-white transform transition-all text-sm md:text-base text-gray-400"
                   key={index}
                 >
                   {item}
