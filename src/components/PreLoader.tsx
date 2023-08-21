@@ -9,7 +9,7 @@ const PreLoader = () => {
   return (
     <motion.div
       initial={loaded ? {} : {clipPath: "circle(140% at 100% 0)", x: 0 }}
-      whileInView={loaded ? {clipPath: "circle(0.0% at 100% 0)", x: "50%" } : {}}
+      whileInView={loaded ? {clipPath: "circle(0.0% at 100% 0)", x: "100%" } : {}}
       transition={{ delay: 0.4, duration: 2.5 }}
       className="absolute inset-0 z-[60] bg-[#b6ff9c]"
     >
