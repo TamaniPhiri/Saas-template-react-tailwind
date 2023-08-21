@@ -5,7 +5,7 @@ const PreLoader = () => {
     <motion.div
       initial={{ x: 0, clipPath: "inset(0% 0% 0% 0%)" }}
       whileInView={{ x: "100%", clipPath: "inset(0% 0% 0% 70%)" }}
-      transition={{ delay: 2, duration: 5 }}
+      transition={{ delay: 1, duration: 4.5 }}
       className="absolute inset-0 z-[60] bg-[#b6ff9c]"
     >
       <div className=" text-black h-fit min-h-screen lineMask overflow-hidden items-center flex py-56">
