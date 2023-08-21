@@ -9,6 +9,7 @@ const Footer = () => {
         loading="lazy"
         className=" absolute bottom-0 right-0"
       />
+      {/* Left Grid Links */}
       <div className="grid lg:grid-cols-2 grid-cols-1 px-4 overflow-hidden w-full mt-12 items-center justify-center gap-5">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 items-center w-full justify-center gap-3">
           <div>
