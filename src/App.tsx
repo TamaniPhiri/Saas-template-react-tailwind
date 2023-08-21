@@ -10,10 +10,12 @@ import Testimonial from "./components/Testimonial";
 import Comparison from "./components/Comparison";
 import CoolFeatures from "./components/CoolFeatures";
 import Cta from "./components/Cta";
+import PreLoader from "./components/PreLoader";
 
 function App() {
   return (
     <>
+      <PreLoader/>
       <Navbar />
       <Hero />
       <Brands/>
